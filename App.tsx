@@ -16,6 +16,7 @@ import { Footer } from './components/Footer';
 const PrivacyPolicy = React.lazy(() => import('./components/PrivacyPolicy').then(module => ({ default: module.PrivacyPolicy })));
 const TermsAndConditions = React.lazy(() => import('./components/TermsAndConditions').then(module => ({ default: module.TermsAndConditions })));
 const ContactUs = React.lazy(() => import('./components/ContactUs').then(module => ({ default: module.ContactUs })));
+const DemoPage = React.lazy(() => import('./components/DemoPage').then(module => ({ default: module.PlumberDemoPage })));
 
 
 function App() {
@@ -89,6 +90,12 @@ function App() {
           </React.Suspense>
         );
       // Handle explicit root, empty, or just hash
+      case '#/demo':
+        return (
+          <React.Suspense fallback={<div className="min-h-screen grid place-items-center">Loading...</div>}>
+            <DemoPage />
+          </React.Suspense>
+        );
       case '#/':
       case '#':
       case '':
