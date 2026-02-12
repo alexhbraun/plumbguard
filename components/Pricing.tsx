@@ -1,7 +1,7 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 
-export const PlumberPricing = () => {
+export const Pricing = () => {
   return (
     <section id="pricing" className="py-24 bg-white">
       <div className="container mx-auto px-4">

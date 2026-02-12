@@ -1,7 +1,7 @@
 import React from 'react';
 import { CheckCircle2, XCircle } from 'lucide-react';
 
-export const PlumberHowItWorks = () => {
+export const HowItWorks = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">

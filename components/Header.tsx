@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Logo } from './Logo';
 import { Menu, X } from 'lucide-react';
 
-export const PlumberHeader: React.FC = () => {
+export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone } from 'lucide-react';
 
-export const PlumberFinalCTA = () => {
+export const FinalCTA = () => {
   return (
     <section className="py-24 relative bg-gradient-to-br from-secondary via-[#0d1a2e] to-primary text-white overflow-hidden">
       

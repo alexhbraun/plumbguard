@@ -22,11 +22,11 @@ export const AudioDemo: React.FC = () => {
             <span className="flex h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
             <span className="text-xs font-medium tracking-wide text-green-300">Live Audio Capability</span>
           </div>
-          <h2 className="text-3xl font-bold font-heading sm:text-4xl text-white">
+          <h2 className="text-3xl font-bold font-heading sm:text-4xl text-white uppercase tracking-wide">
             Listen to the AI Receptionist
           </h2>
           <p className="mt-4 text-lg text-blue-100">
-            Indistinguishable from a human. Our AI agents handle scheduling, FAQ answers, and lead qualification seamlessly.
+            Indistinguishable from a human. Handles panicked customers, books appointments, and qualifies leads seamlessly.
           </p>
         </div>
 
@@ -39,8 +39,8 @@ export const AudioDemo: React.FC = () => {
                             <PhoneCall className="h-5 w-5 text-white" />
                         </div>
                         <div>
-                            <p className="text-white font-semibold">Inbound Booking Call</p>
-                            <p className="text-blue-200 text-xs">AI Agent vs. New Customer</p>
+                            <p className="text-white font-semibold">Inbound Emergency Call</p>
+                            <p className="text-blue-200 text-xs">AI Agent vs. Panicked Homeowner</p>
                         </div>
                     </div>
                     <div className="px-3 py-1 bg-green-500/20 rounded-full border border-green-500/30 text-green-400 text-xs font-medium animate-pulse">
@@ -81,16 +81,16 @@ export const AudioDemo: React.FC = () => {
                     <div className="w-full space-y-4">
                         <div className="flex items-start gap-3">
                             <div className="h-8 w-8 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 text-xs text-gray-400">User</div>
-                            <div className="bg-white/10 rounded-lg rounded-tl-none p-3 text-sm text-gray-200 max-w-[80%] border border-white/5">
-                                <p>Hi, I was wondering if you have any appointments available for a consultation this Tuesday?</p>
+                            <div className="bg-white/10 rounded-lg rounded-tl-none p-3 text-sm text-gray-200 max-w-[85%] border border-white/5">
+                                <p>"Help! My basement is flooding, I think a pipe burst! I need someone fast!"</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-3 flex-row-reverse">
                             <div className="h-8 w-8 rounded-full bg-accent flex items-center justify-center flex-shrink-0 border border-white/20">
                                 <span className="text-white text-xs font-bold">AI</span>
                             </div>
-                            <div className="bg-accent/80 backdrop-blur-sm border border-accent/50 rounded-lg rounded-tr-none p-3 text-sm text-white max-w-[80%] shadow-lg">
-                                <p>Absolutely! I can certainly help you with that. I have an opening at 10:00 AM or 2:00 PM on Tuesday. Which one works better for you?</p>
+                            <div className="bg-accent/80 backdrop-blur-sm border border-accent/50 rounded-lg rounded-tr-none p-3 text-sm text-white max-w-[85%] shadow-lg">
+                                <p>"I'm so sorry to hear that. I can get a technician out to you immediately. Can you please confirm your address?"</p>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ export const AudioDemo: React.FC = () => {
                     </div>
                     <div>
                         <h3 className="text-xl font-bold text-white mb-2">Handles Context Switching</h3>
-                        <p className="text-blue-100/80">Unlike basic IVR menus, our AI understands interruptions, accents, and context changes naturally.</p>
+                        <p className="text-blue-100/80">Our AI understands interruptions, accents, and panic. It stays calm and focuses on booking the job.</p>
                     </div>
                 </div>
 
@@ -115,15 +115,15 @@ export const AudioDemo: React.FC = () => {
                     </div>
                     <div>
                         <h3 className="text-xl font-bold text-white mb-2">Instant SMS Follow-up</h3>
-                        <p className="text-blue-100/80">If the user hangs up or needs a link, the AI instantly sends a text message to continue the conversation.</p>
+                        <p className="text-blue-100/80">If the call drops or they need a booking link, we send a text instantly.</p>
                     </div>
                 </div>
                 
                  <div className="p-6 bg-white/5 border-l-4 border-secondary rounded-r-xl backdrop-blur-sm">
                     <p className="text-white font-medium italic">
-                        "This sounds 10x better than our previous answering service, and it costs a fraction of the price."
+                        "I used to miss 3-4 emergency calls a week because I was asleep or on a job. Now I capture all of them."
                     </p>
-                    <p className="mt-2 text-sm text-gray-400">— Marketing Director, Local Agency</p>
+                    <p className="mt-2 text-sm text-gray-400">— Mark T., PlumbRight Services</p>
                 </div>
             </div>
         </div>

@@ -7,6 +7,9 @@ import { CostSection } from './components/CostSection';
 import { HowItWorks } from './components/HowItWorks';
 import { TargetAudience } from './components/TargetAudience';
 import { BusySeason } from './components/BusySeason';
+import { FaqSection } from './components/FaqSection';
+import { AudioDemo } from './components/AudioDemo';
+import { Benefits } from './components/Benefits';
 import { WhoThisIsFor } from './components/WhoThisIsFor';
 import { Pricing } from './components/Pricing';
 import { FinalCTA } from './components/FinalCTA';
@@ -56,7 +59,10 @@ function App() {
         <HowItWorks />
         <TargetAudience />
         <BusySeason />
+        <AudioDemo />
+        <Benefits />
         <WhoThisIsFor />
+        <FaqSection />
         <Pricing />
         <FinalCTA />
       </>

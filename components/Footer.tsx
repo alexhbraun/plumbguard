@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const PlumberFooter = () => {
+export const Footer = () => {
   return (
     <footer className="bg-secondary text-white py-12">
       <div className="container mx-auto px-4">

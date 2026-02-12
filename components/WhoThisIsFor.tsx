@@ -1,58 +1,60 @@
 import React from 'react';
 import { Check, X } from 'lucide-react';
 
-export const PlumberWhoThisIsFor = () => {
+export const WhoThisIsFor = () => {
   return (
-    <section className="py-20 bg-neutral-light">
+    <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold font-heading text-secondary mb-12 text-center">WHO THIS IS FOR</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-heading text-secondary mb-12 text-center uppercase tracking-wide">
+            WHO THIS IS FOR
+          </h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             {/* THIS IS FOR */}
-            <div className="bg-neutral-light rounded-xl p-8 border-l-4 border-success shadow-sm">
-              <h3 className="text-xl font-bold text-secondary mb-6 flex items-center gap-2">
-                <div className="bg-success text-white p-1 rounded-full">
-                  <Check className="w-4 h-4" />
+            <div className="bg-neutral-light rounded-xl p-8 border-t-8 border-green-500 shadow-lg hover:-translate-y-1 transition-transform">
+              <h3 className="text-xl font-bold text-secondary mb-8 flex items-center gap-3">
+                <div className="bg-green-100 p-2 rounded-full">
+                  <Check className="w-6 h-6 text-green-600" />
                 </div>
-                This IS for plumbing companies that:
+                This IS for you if:
               </h3>
               <ul className="space-y-4">
-                <li className="flex items-start gap-3 text-neutral-dark font-medium">
-                  <Check className="w-5 h-5 text-success shrink-0 mt-0.5" />
-                  Rely heavily on inbound calls
+                <li className="flex items-start gap-3 text-neutral-dark font-medium leading-normal">
+                  <Check className="w-5 h-5 text-green-500 shrink-0 mt-1" />
+                  Your revenue depends on answering the phone first.
                 </li>
-                <li className="flex items-start gap-3 text-neutral-dark font-medium">
-                  <Check className="w-5 h-5 text-success shrink-0 mt-0.5" />
-                  Run 2-15 trucks
+                <li className="flex items-start gap-3 text-neutral-dark font-medium leading-normal">
+                  <Check className="w-5 h-5 text-green-500 shrink-0 mt-1" />
+                  You run 2-15 service trucks and want to scale.
                 </li>
-                <li className="flex items-start gap-3 text-neutral-dark font-medium">
-                  <Check className="w-5 h-5 text-success shrink-0 mt-0.5" />
-                  Miss calls while on jobs
-                </li>
-                <li className="flex items-start gap-3 text-neutral-dark font-medium">
-                  <Check className="w-5 h-5 text-success shrink-0 mt-0.5" />
-                  Don't want to hire another dispatcher
+                <li className="flex items-start gap-3 text-neutral-dark font-medium leading-normal">
+                  <Check className="w-5 h-5 text-green-500 shrink-0 mt-1" />
+                  You're tired of losing jobs because you were asleep or in a crawlspace.
                 </li>
               </ul>
             </div>
             
             {/* THIS IS NOT FOR */}
-            <div className="bg-white rounded-xl p-8 border border-gray-200 border-l-4 border-l-error shadow-sm opacity-90">
-              <h3 className="text-xl font-bold text-secondary mb-6 flex items-center gap-2">
-                <div className="bg-error text-white p-1 rounded-full">
-                  <X className="w-4 h-4" />
+            <div className="bg-neutral-light rounded-xl p-8 border-t-8 border-red-500 shadow-lg hover:-translate-y-1 transition-transform">
+              <h3 className="text-xl font-bold text-secondary mb-8 flex items-center gap-3">
+                <div className="bg-red-100 p-2 rounded-full">
+                  <X className="w-6 h-6 text-red-600" />
                 </div>
-                This is NOT for:
+                This is NOT for you if:
               </h3>
               <ul className="space-y-4">
-                <li className="flex items-start gap-3 text-neutral-medium">
-                  <X className="w-5 h-5 text-error shrink-0 mt-0.5" />
-                  Large commercial-only plumbing companies
+                <li className="flex items-start gap-3 text-neutral-medium leading-normal">
+                  <X className="w-5 h-5 text-red-400 shrink-0 mt-1" />
+                  You only do new construction bids.
                 </li>
-                <li className="flex items-start gap-3 text-neutral-medium">
-                  <X className="w-5 h-5 text-error shrink-0 mt-0.5" />
-                  Companies that already have 24/7 live answering
+                <li className="flex items-start gap-3 text-neutral-medium leading-normal">
+                  <X className="w-5 h-5 text-red-400 shrink-0 mt-1" />
+                  You are a one-man show with $0 budget for growth.
+                </li>
+                <li className="flex items-start gap-3 text-neutral-medium leading-normal">
+                  <X className="w-5 h-5 text-red-400 shrink-0 mt-1" />
+                  You already have 24/7 full-time office staff.
                 </li>
               </ul>
             </div>

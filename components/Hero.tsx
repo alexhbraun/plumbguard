@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, Play } from 'lucide-react';
 
-export const PlumberHero = () => {
+export const Hero = () => {
   return (
     <section className="relative bg-secondary text-white overflow-hidden border-b-4 border-accent">
       {/* Background with overlay - Charcoal Base */}
@@ -33,7 +33,7 @@ export const PlumberHero = () => {
             </a>
             
             <a 
-              href="#/plumber-demo"
+              href="#/demo"
               className="w-full sm:w-auto px-8 py-4 bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-secondary font-bold rounded-lg transition-all text-lg flex items-center justify-center gap-2 uppercase tracking-wide"
             >
               <div className="bg-accent/10 p-1 rounded-full">
@@ -44,6 +44,7 @@ export const PlumberHero = () => {
           </div>
           
           <div className="mt-16 flex flex-wrap justify-center gap-8 md:gap-16 opacity-80 grayscale">
+             {/* Trust badges can go here if needed later */}
           </div>
         </div>
       </div>

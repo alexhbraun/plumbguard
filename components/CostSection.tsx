@@ -1,38 +1,38 @@
 import React from 'react';
-import { DollarSign, TrendingDown } from 'lucide-react';
+import { TrendingDown } from 'lucide-react';
 
-export const PlumberCostSection = () => {
+export const CostSection = () => {
   return (
     <section className="py-20 bg-neutral-light">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-heading text-secondary mb-12">THE COST</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-heading text-secondary mb-12 uppercase tracking-wide">THE COST</h2>
           
-          <div className="bg-white rounded-lg shadow-sm mb-12 border-l-8 border-accent">
+          <div className="bg-white rounded-lg shadow-sm mb-12 border-l-8 border-accent overflow-hidden">
             <div className="p-10 md:p-14">
-                <h3 className="text-3xl md:text-4xl font-extrabold text-secondary mb-6 flex flex-col md:flex-row items-center justify-center gap-4 uppercase">
-                <div className="bg-blue-100 p-3 rounded-full text-primary">
-                     <TrendingDown className="w-8 h-8" />
+                <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
+                    <div className="bg-red-100 p-4 rounded-full text-red-600 animate-pulse">
+                         <TrendingDown className="w-8 h-8" />
+                    </div>
                 </div>
-                One Missed Slab Leak Call Can Cost You <span className="text-accent text-5xl md:text-6xl block mt-2 md:mt-0">$3,000+</span>
+                
+                <h3 className="text-3xl md:text-4xl font-extrabold text-secondary mb-2 leading-tight uppercase">
+                    One Missed Water Heater Call <br/> Can Cost You
                 </h3>
+                <span className="text-accent text-6xl md:text-7xl font-black block mt-4">$1,500+</span>
                 
-                <div className="grid md:grid-cols-2 gap-8 text-left max-w-2xl mx-auto mt-10 border-t border-gray-100 pt-10">
-                <div className="bg-neutral-light p-6 rounded-lg">
-                    <p className="font-bold text-secondary mb-2 text-lg">The Call:</p>
-                    <p className="text-neutral-medium">Homeowner hears water running under the floor. Needs repair ASAP.</p>
+                <div className="grid md:grid-cols-2 gap-8 text-left max-w-2xl mx-auto mt-12 border-t border-gray-100 pt-10">
+                    <div className="bg-neutral-light p-6 rounded-lg">
+                        <p className="font-bold text-secondary mb-2 text-lg uppercase tracking-wide">The Call:</p>
+                        <p className="text-neutral-medium">"My water heater is leaking all over the garage, I need someone now."</p>
+                    </div>
+                    <div className="bg-neutral-light p-6 rounded-lg border-l-4 border-red-400">
+                        <p className="font-bold text-secondary mb-2 text-lg uppercase tracking-wide">The Result:</p>
+                        <p className="text-secondary font-bold">Voicemail. They hang up. <br/>You lose a $1,500 install.</p>
+                    </div>
                 </div>
-                <div className="bg-neutral-light p-6 rounded-lg border border-gray-200">
-                    <p className="font-bold text-secondary mb-2 text-lg">The Result:</p>
-                    <p className="text-secondary font-bold">Voicemail. They hang up. Next plumber gets the $3k job.</p>
-                </div>
-                </div>
-                
-                <p className="text-xl text-secondary mt-10 leading-relaxed font-bold">
-                If you lose just one slab leak per month because nobody answered, that's more than the monthly cost of PlumbGuard.
-                </p>
             </div>
-             <div className="bg-secondary text-accent py-4 px-8 font-bold text-lg uppercase tracking-wider">
+             <div className="bg-secondary text-white py-6 px-8 font-bold text-lg uppercase tracking-wider">
                 We don't sell marketing. We protect revenue.
             </div>
           </div>
